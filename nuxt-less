@@ -1,0 +1,13 @@
+nuxt 快速安装框架
+npx create-nuxt-app projectname(npx在NPM版本5.2.0默认安装了)
+
+安装npm i less less-loader --save-dev
+安装npm i style-resources-loader -D
+nuxt.config.js中
+build:{
+
+  styleResources:{
+      //引用定义了网站的主要颜色以及字体变量 可供全局使用
+      less:'./assets/css/base.less'
+  }
+}
